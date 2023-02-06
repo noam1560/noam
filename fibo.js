@@ -1,7 +1,8 @@
 function calculate_fibo(){
     var usre_input = document.getElementById("usreinput").value;
-    var result = fiboloop(usre_input);
-    document.getElementById("fibo_resuit").innerHTML = result;
+    var result = getNthPrime(usre_input);
+    console.log(result)
+    document.getElementById("fibo_result").innerHTML = result;
 }
 
 function fiborec(aaa) {

@@ -15,3 +15,15 @@ function isprime(usreinput) {
     }
     return true;
 }
+
+function getNthPrime(nth) {
+    var counter = 0;
+    var i = 2;
+    while (counter <= nth){
+        if (isprime(i)){
+            counter++;
+        }
+        i++;
+    }
+    return --i;
+}
